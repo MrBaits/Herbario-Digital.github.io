@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Herbario Digital</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#Inicio">
+            <h1><span>H</span>erbario <span>D</span>igital</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#Inicio"  type="button" id="Inicio1" data-after="Inicio">Inicio</a></li>
+            <li><a href="#Plantas" type="button" id="Plantas1"data-after="Plantas">Plantas</a></li>
+            <li><a href="#Juegos" type="button" id="Juegos"data-after="Juegos">Juegos</a></li>
+            <li><a href="#Acerca de" type="button" id="Acerca de"data-after="Acerca de">Acerca de</a></li>
+            <li><a href="#Contacto"type="button" id="Contacto" data-after="Contacto">Contacto</a></li>
+            <script>
+              var boton = document.getElementById('Plantas1');boton.addEventListener('click', function() {window.location.href = 'Planta.html';});
+              var boton = document.getElementById('Inicio1');boton.addEventListener('click', function() {window.location.href = 'index.html';});
+          </script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="Inicio">
+    <div class="Inicio container">
+      <div>
+        <h1>Hola, <span></span></h1>
+        <h1>Bienvenidos al  <span></span></h1>
+        <h1 class="colorh1Inicio">Herbario Digital <span></span></h1>
+        <a href="#Plantas" type="button" id="miBoton" class="cta">Plantas</a>
+        <script>
+          // Obtenemos una referencia al botón
+          var boton = document.getElementById('miBoton');
+      
+          // Agregamos un evento de clic al botón
+          boton.addEventListener('click', function() {
+              // Redirigimos a otra página
+              window.location.href = 'Planta.html';
+          });
+      </script>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Ser<span>vi</span>cios</h1>
+        <p>Nuestro servicio es facilitarles información acerca de las plantas que hay en nuestro municipio, permite un acceso público para explorar, estudiar y aprender sobre las diversas especies de plantas</p>
+      </div>
+      
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Recursos Educativos</h2>
+          <p>Además de la recopilación de datos botánicos, el proyecto proporcionará recursos educativos sobre la flora local y su importancia en el ecosistema. Esto incluirá descripciones detalladas de las plantas, información sobre su papel en la naturaleza y materiales didácticos para la conciencia ambiental.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Acceso Público</h2>
+          <p>El herbario digital estará disponible públicamente en línea, lo que permitirá el acceso gratuito a estudiantes y a la comunidad en general. Los usuarios podrán acceder al herbario en cualquier momento y desde cualquier lugar con conexión a Internet.</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Objetivos D<span>el Proyecto</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>1 Objetivo</h1>
+            <h2>Promover la Conciencia Ambiental</h2>
+            <p>Incorporar contenido educativo en la página web, incluyendo información sobre la importancia de la flora local y su papel en el ecosistema</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>2 Objetivo</h1>
+            <h2>Dar información Sobre Las Plantas Del Municipio</h2>
+            <p>Este herbario contendrá información detallada sobre las plantas autóctonas del municipio incluyend Nombres Científicos y Comunes,	Descripciones Botánicas y sus Usos</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">información de <span>Contacto</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Telefono</h1>
+            <h2>+1 234 123 1234</h2>
+            <h2>+1 234 123 1234</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>info@gmail.com</h2>
+            <h2>abcd@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Dirección</h1>
+            <h2>La Esmeralda, Institucion Educativa La Esmeralda</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>H</span>erbario <span> D</span>igital</h1>
+      </div>
+      <h2>Explorando Nuestra Biodiversidad</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Herberio Digital. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
